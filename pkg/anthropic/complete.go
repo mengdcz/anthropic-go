@@ -53,7 +53,8 @@ func (c *Client) sendCompletionRequest(req *CompletionRequest) (*CompletionRespo
 	}
 
 	// Create the HTTP request
-	requestURL := fmt.Sprintf("%s/v1/complete", c.baseURL)
+	//requestURL := fmt.Sprintf("%s/v1/complete", c.baseURL)
+	requestURL := fmt.Sprintf("%s/complete", c.baseURL)
 	request, err := http.NewRequest("POST", requestURL, bytes.NewBuffer(data))
 	if err != nil {
 		return nil, fmt.Errorf("error creating new request: %w", err)
@@ -87,7 +88,8 @@ func (c *Client) handleStreaming(events chan StreamResponse, errCh chan error, r
 		return
 	}
 
-	request, err := http.NewRequest("POST", fmt.Sprintf("%s/v1/complete", c.baseURL), bytes.NewBuffer(data))
+	//request, err := http.NewRequest("POST", fmt.Sprintf("%s/v1/complete", c.baseURL), bytes.NewBuffer(data))
+	request, err := http.NewRequest("POST", fmt.Sprintf("%s/complete", c.baseURL), bytes.NewBuffer(data))
 	if err != nil {
 		errCh <- fmt.Errorf("error creating new request: %w", err)
 		return

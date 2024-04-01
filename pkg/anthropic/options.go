@@ -3,6 +3,8 @@ package anthropic
 type CompletionOption func(*CompletionRequest)
 type MessageOption func(*MessageRequest)
 
+//type ClientsOption func(client *Client)
+
 type GenericOption[T any] func(*T)
 
 func WithModel[T any](model Model) GenericOption[T] {
@@ -112,3 +114,12 @@ func WithTopP[T any](topP float64) GenericOption[T] {
 		}
 	}
 }
+
+//func WithBaseUrl[T any](baseUrl string) GenericOption[T] {
+//	return func(r *T) {
+//		switch v := any(r).(type) {
+//		case *Client:
+//			v.baseURL = baseUrl
+//		}
+//	}
+//}
