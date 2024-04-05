@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic"
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic/utils"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic/utils"
 )
 
 func TestCompleteIntegration(t *testing.T) {
@@ -65,9 +65,9 @@ func TestCompleteStreamIntegration(t *testing.T) {
 	}
 
 	// Prepare a completion request
-	request := anthropic.NewCompletionRequest(prompt, 
-		anthropic.WithStreaming[anthropic.CompletionRequest](true), 
-		anthropic.WithMaxTokens[anthropic.CompletionRequest](10), 
+	request := anthropic.NewCompletionRequest(prompt,
+		anthropic.WithStreaming[anthropic.CompletionRequest](true),
+		anthropic.WithMaxTokens[anthropic.CompletionRequest](10),
 		anthropic.WithModel[anthropic.CompletionRequest](anthropic.ClaudeV2_1))
 
 	// Call the Complete method (should return an error since streaming is enabled)

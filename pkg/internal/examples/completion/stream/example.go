@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic"
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic/utils"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic/utils"
 )
 
 func main() {
