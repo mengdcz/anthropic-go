@@ -95,8 +95,10 @@ func (c *Client) handleMessageStreaming(events chan MessageStreamResponse, errCh
 		return
 	}
 
-	request, err := http.NewRequest("POST", fmt.Sprintf("%s/v1/messages", c.baseURL), bytes.NewBuffer(data))
+	request, err := http.NewRequest("POST", fmt.Sprintf("%s/messages", c.baseURL), bytes.NewBuffer(data))
+	//request, err := http.NewRequest("POST", fmt.Sprintf("%s/v1/messages", c.baseURL), bytes.NewBuffer(data))
 	//request, err := http.NewRequest("POST", fmt.Sprintf("%s/messages", c.baseURL), bytes.NewBuffer(data))
+	fmt.Println(fmt.Sprintf("%s/messages", c.baseURL))
 	if err != nil {
 		errCh <- fmt.Errorf("error creating new request: %w", err)
 		return
