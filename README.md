@@ -2,14 +2,14 @@
 
 This project provides an unofficial Go SDK for Anthropic, a A next-generation AI assistant for your tasks, no matter the scale. The SDK makes it easy to interact with the Anthropic API in Go applications. For more information about Anthropic, including API documentation, visit the official [Anthropic documentation.](https://console.anthropic.com/docs)
 
-[![GoDoc](https://godoc.org/github.com/madebywelch/anthropic-go?status.svg)](https://pkg.go.dev/github.com/madebywelch/anthropic-go/v2)
+[![GoDoc](https://godoc.org/github.com/mengdcz/anthropic-go?status.svg)](https://pkg.go.dev/github.com/mengdcz/anthropic-go/v2)
 
 ## Installation
 
 You can install the Anthropic SDK in Go using go get:
 
 ```go
-go get github.com/madebywelch/anthropic-go/v2
+go get github.com/mengdcz/anthropic-go/v2
 ```
 
 ## Usage
@@ -24,8 +24,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic"
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic/utils"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic/utils"
 )
 
 func main() {
@@ -69,8 +69,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic"
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic/utils"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic/utils"
 )
 
 func main() {
@@ -127,7 +127,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic"
 )
 
 func main() {
@@ -168,7 +168,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic"
 )
 
 func main() {
@@ -241,7 +241,7 @@ Good
 package main
 
 import (
-	"github.com/madebywelch/anthropic-go/v2/pkg/anthropic"
+	"github.com/mengdcz/anthropic-go/v2/pkg/anthropic"
 )
 
 func main() {
